@@ -33,7 +33,7 @@ resource "aws_route_table" "sprint7_public_rt" {
   }
 }
 
-resource "aws_route_table_association" "sprint7_public_rt_assoc" {
+resource "aws_route_table_association" "sprint7_public_rt_assoc01" {
   subnet_id      = aws_subnet.sprint7_public_subnet01.id
   route_table_id = aws_route_table.sprint7_public_rt.id
 }
